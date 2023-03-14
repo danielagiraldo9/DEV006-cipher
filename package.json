@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "cipher",
   "version": "1.0.0",
   "main": "src/index.html",
@@ -12,6 +13,7 @@
     "start": "serve ./src",
     "deploy": "gh-pages -d src"
   },
+  
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
