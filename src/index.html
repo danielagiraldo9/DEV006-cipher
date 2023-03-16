@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <h1>Bienvenido a couplecode</h1>
+      <img src="/src/enamorados.png" alt="enamorados" width="300">
+      <p>En este sitio podrás cifrar y descifrar mensajes para tu enamorado secreto</p>
+      <label for="tbuser">Ingresa tu nombre</label>
+      <input type="text" id="userName" placeholder="EnterUsername" maxlength="20">
+      <input type="button" id="btn1" value="click Me">
+      <br><br><br>
+    </div>  
+    <div> 
+      <h3 id="saludo"></h3>
+      <input type="button" value="Cifrar">
+      <br><br><br>
+      <input type="button" value="Descifrar">
+      <br><br><br>
+    </div>  
+    <div>
+      <h2>¿A cuantas posiciones en el alfabeto quieres codificar tu mensaje?</h2>
+      <input type="number" min="1" placeholder="posiciones">
+      <h1>Escribe tu mensaje en mayúscula</h1>
+      <input type="text">
+      <br><br><br>
+    </div>
+    <div>
+      <h2>¿A cuantas posiciones en el alfabeto quieres decodificar tu mensaje?</h2>
+      <input type="number" min="1" placeholder="posiciones">
+      <h1>Escribe tu mensaje en mayúscula</h1>
+      <input type="text">
+      <br><br><br>
+      <input type="button" value="Fin">
+    </div>
+    <footer>
+      <p>Made by Daniela Giraldo Jimenez</p>
+    </footer>
+  <script src="/src/index.js" type="module"></script>
+  </body>
+</html>
