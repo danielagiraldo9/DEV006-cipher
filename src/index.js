@@ -7,21 +7,22 @@ const btn1 = document.getElementById('btn1');
 const saludo = document.getElementById('saludo');
 
 function captureName() {
-  saludo.innerText = 'Hola ' + userName.value + ' que quieres hacer hoy?';
-  // const name = document.createElement("h3");
-  // const text_name = document.createTextNode('Hola ' + userName.value + ' que quieres hacer hoy?');
-  // name.appendChild(text_name);
-  // document.body.appendChild(name);
+    saludo.innerText = 'Hola ' + userName.value + ' que quieres hacer hoy?';
 }
 
+function showOptions() {
+    document.getElementById("btnCifrar").style.display = 'block';
+    document.getElementById("btnDescifrar").style.display = 'block';
+}
 
+function cifrar() {
+    document.getElementById("root").style.display = 'none';
+    document.getElementById("cifrar").style.display = 'block';
+}
 
-// function encodeButton() {
-
-// }
-
-// function decodeButton() {
-
-// }
+function descifrar() {
+    document.getElementById("root").style.display = 'none';
+    document.getElementById("descifrar").style.display = 'block';
+}
 
 btn1.addEventListener('click', captureName);
