@@ -1,28 +1,53 @@
-//import cipher from './cipher.js';
+import cipher from './cipher.js';
 
-//console.log(cipher.encode(70, "DANIELA HOLA"));
+//console.log(cipher.encode(70, "DANIELA"));
 
 const userName = document.getElementById('userName');
 const btn1 = document.getElementById('btn1');
 const saludo = document.getElementById('saludo');
 
-function captureName() {
-    saludo.innerText = 'Hola ' + userName.value + ' que quieres hacer hoy?';
+function showOptions () {
+  saludo.innerText = 'Hola ' + userName.value + ' que quieres hacer hoy?';
+  document.getElementById("btnCifrar").style.display = 'block';
+  document.getElementById("btnDescifrar").style.display = 'block';
 }
 
-function showOptions() {
-    document.getElementById("btnCifrar").style.display = 'block';
-    document.getElementById("btnDescifrar").style.display = 'block';
+function btnCifrar() {
+  document.getElementById("root").style.display = 'none';
+  document.getElementById("cifrar").style.display = 'block';
+}
+
+function btnDescifrar() {
+  document.getElementById("root").style.display = 'none';
+  document.getElementById("descifrar").style.display = 'block';
 }
 
 function cifrar() {
-    document.getElementById("root").style.display = 'none';
-    document.getElementById("cifrar").style.display = 'block';
+  const positions = document.getElementById("posicionesCifrar");
+  const message = document.getElementById("msgEncode");
+  const msgEncode = cipher.encode(positions.value, message.value);
+  const msgCiphered = document.getElementById("msgCiphered");
+  msgCiphered.innerText = msgEncode;
 }
 
-function descifrar() {
-    document.getElementById("root").style.display = 'none';
-    document.getElementById("descifrar").style.display = 'block';
+function descifrar () {
+  const positions = document.getElementById("posDecodificar");
+  const message = document.getElementById("msgToDecode");
+  const msgToDecode = cipher.decode(positions.value, message.value);
+  const msgDecode = document.getElementById("msgDecoded");
+  msgDecode.innerText = msgToDecode;
 }
-
-btn1.addEventListener('click', captureName);
+    
+btn1.addEventListener('click', showOptions);
+document.getElementById("btnCifrar").addEventListener('click', btnCifrar);
+document.getElementById("btnDescifrar").addEventListener('click', btnDescifrar);
+document.getElementById("codificarMensaje").addEventListener('click', cifrar);
+document.getElementById("decodificarMensaje").addEventListener("click", descifrar);
+const volverInicio1 = document.getElementById("volverInicio1");
+volverInicio1.addEventListener("click", () => {
+  location.reload();
+})
+const volverInicio2 = document.getElementById("volverInicio2");
+volverInicio2.addEventListener("click", () => {
+  location.reload();
+})

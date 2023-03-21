@@ -1,5 +1,12 @@
 const cipher = {
   encode (offset, string) {
+    offset *= 1;
+    if (typeof offset !== "number") {
+      throw new TypeError("it must be a number");
+    }
+    if (typeof string !== "string") {
+      throw new TypeError("it must be a string");
+    }
     const spacesToRun = offset % 26;
     let encodedMessage = "";
     for (let i = 0; i < string.length; i++) {
@@ -20,6 +27,13 @@ const cipher = {
   },
 
   decode (offset, string) {
+    offset *= 1;
+    if (typeof offset !== "number") {
+      throw new TypeError("it must be a number");
+    }
+    if (typeof string !== "string") {
+      throw new TypeError("it must be a string");
+    }
     const spacesToRun = offset % 26;
     let decodeMessaje = "";
     for (let i = 0; i < string.length; i++) {
