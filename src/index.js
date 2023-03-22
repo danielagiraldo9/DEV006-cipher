@@ -37,17 +37,15 @@ function descifrar () {
   const msgDecode = document.getElementById("msgDecoded");
   msgDecode.innerText = msgToDecode;
 }
+
+function volverInicio () {
+  location.reload();
+}
     
 btn1.addEventListener('click', showOptions);
 document.getElementById("btnCifrar").addEventListener('click', btnCifrar);
 document.getElementById("btnDescifrar").addEventListener('click', btnDescifrar);
 document.getElementById("codificarMensaje").addEventListener('click', cifrar);
 document.getElementById("decodificarMensaje").addEventListener("click", descifrar);
-const volverInicio1 = document.getElementById("volverInicio1");
-volverInicio1.addEventListener("click", () => {
-  location.reload();
-})
-const volverInicio2 = document.getElementById("volverInicio2");
-volverInicio2.addEventListener("click", () => {
-  location.reload();
-})
+document.getElementById("volverInicio1").addEventListener("click", volverInicio);
+document.getElementById("volverInicio2").addEventListener("click", volverInicio);

@@ -473,15 +473,18 @@ Project Feedback:
 
 
 
-### Proyecto cipher: Bienvenido a couple code 💌🔥 :exclamation: 
+### Proyecto cipher: Bienvenido a couple code :love_letter: :fire:
+
+## Herramientas para la realización del proyecto :hammer: :wrench:
+
+![](https://geoinnova.org/wp-content/uploads/2021/08/logos.png)
+
+## Usuarios 
 ---
-## Usuarios
+Esta pagina web está pensada como un juego que permita que los enamorados puedan comunicarse con tranquilidad,
+dedicarse letras de amor, canciones y todos aquellos mensajes que solo desean que quede entre ellxs :wink: :eyes:
+Tiene una funcionalidad muy sencilla, puedes ingresar tu nombre para que sea mas personalizado y codificar y/o
+decodificar el número de espacios que desees pautar. :collision:
 ---
-Esta pagina web está pensado como un juego que permita que los enamorados puedan comunicarse con tranquilidad,
-dedicarse letras de amor, canciones y todos aquellos mensajes que solo desean que queden entre ellxs 😉👀
-
-
-
-
 
 
